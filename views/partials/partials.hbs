@@ -1,0 +1,13 @@
+{{#each files}}
+<tr>
+    <td>{{id}}</td>
+    <td><img src="images/{{makeImage image}}" style="height: 50px;width:50px;"></td>
+    <td>{{name}}</td>
+    <td>{{size}}</td>
+    <td>{{type}}</td>
+    <td><a href="delete/{{id}}">delete</a></td>
+    <td><a href="info/{{id}}">info</a></td>
+    <td><a href="download/{{id}}">download</a></td>
+</tr>
+{{/each}}
+
