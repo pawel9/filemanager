@@ -110,7 +110,7 @@ app.get("/download/:id", function (req, res) {
 
 app.post('/handleUpload', function (req, res) {
     var form = new formidable.IncomingForm();
-    form.uploadDir = __dirname + 'static/upload/'       // folder do zapisu zdjęcia
+    form.uploadDir = __dirname + '/static/upload/'       // folder do zapisu zdjęcia
     form.keepExtensions = true                           // zapis z rozszerzeniem pliku
     form.multiples = true                                // zapis wielu plików  
 
