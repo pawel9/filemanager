@@ -110,7 +110,7 @@ app.get("/download/:id", function (req, res) {
 
 app.post('/handleUpload', function (req, res) {
     var form = new formidable.IncomingForm();
-    form.uploadDir = '/app/static/upload/'       // folder do zapisu zdjęcia
+    form.uploadDir = __dirname + 'static/upload/'       // folder do zapisu zdjęcia
     form.keepExtensions = true                           // zapis z rozszerzeniem pliku
     form.multiples = true                                // zapis wielu plików  
 
@@ -120,7 +120,7 @@ app.post('/handleUpload', function (req, res) {
             var tempName = files.imagetoupload.name;
             var tempType = files.imagetoupload.type;
             var tempSize = files.imagetoupload.size;
-            var tempPath = files.imagetoupload[i].path; 
+            var tempPath = files.imagetoupload.path; 
             var tempDate = new Date().getTime();
 
             if(files.imagetoupload.type == "application/msword"){
