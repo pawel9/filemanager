@@ -1,17 +1,25 @@
 {
-  "name": "handlebars",
+  "name": "filemanager",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "filemanager.js",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "formidable": "^1.2.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawel9/filemanager.git"
+  },
+  "author": "pt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pawel9/filemanager/issues"
+  },
+  "homepage": "https://github.com/pawel9/filemanager#readme"
 }
