@@ -2,7 +2,7 @@
 
 var express = require("express")
 var app = express()
-const PORT = 3000;
+var PORT = process.env.PORT || 3000;
 var bodyParser = require("body-parser");
 var hbs = require('express-handlebars');
 var path = require("path");
@@ -164,7 +164,6 @@ app.post('/handleUpload', function (req, res) {
 
                 context.files.push({id: id, image:tempImage, name: tempName, size: tempSize, type: tempType, path:tempPath, savedate:tempDate});
                 id++;
-                console.log(files);
             }
             res.redirect("/filemanager");
 
